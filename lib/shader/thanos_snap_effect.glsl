@@ -99,7 +99,8 @@ void main()
             vec4 zeroPointPixelColor = texture(uImageTexture, zeroPointPixelPos);
             float alpha = zeroPointPixelColor.a;
             float fadeOutLivetime = max(0.0, adjustedTime - (particleLifetime - fadeOutDuration));
-            fragColor = zeroPointPixelColor * (1.0 - fadeOutLivetime / fadeOutDuration);
+            float opacity = max(0.0, 1.0 - fadeOutLivetime / fadeOutDuration);
+            fragColor = zeroPointPixelColor * opacity;
             return;
         }
     }
