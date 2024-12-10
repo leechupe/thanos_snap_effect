@@ -14,3 +14,7 @@
 ## 0.0.7
 
 * Fixed the issue with "'!debugNeedsPaint': is not true." error
+
+## 0.0.8
+
+* Fixed the issue with negative opacity while animating ([#8](https://github.com/ArkhipenkaPiotr/thanos_snap_effect/issues/8))
