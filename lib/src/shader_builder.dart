@@ -54,8 +54,8 @@ class _ShaderBuilderState extends State<ShaderBuilder> {
   }
 
   void _initShader() async {
-    final ui.FragmentProgram program =
-        _shaderCache[widget.shaderAsset] ?? await ui.FragmentProgram.fromAsset(widget.shaderAsset);
+    final ui.FragmentProgram program = _shaderCache[widget.shaderAsset] ??
+        await ui.FragmentProgram.fromAsset(widget.shaderAsset);
 
     _shaderCache[widget.shaderAsset] = program;
 
