@@ -75,6 +75,8 @@ class _AnimatedListItem extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    // Will be fixed in the next release
+    // ignore: deprecated_member_use
     final itemColor = Color(index * 0xFF123456).withOpacity(1.0);
     final textColor =
         itemColor.computeLuminance() > 0.2 ? Colors.black : Colors.white;
@@ -86,6 +88,8 @@ class _AnimatedListItem extends StatelessWidget {
         color: itemColor,
         boxShadow: [
           BoxShadow(
+            // Will be fixed in the next release
+            // ignore: deprecated_member_use
             color: Colors.black.withOpacity(0.1),
             blurRadius: 4,
             offset: const Offset(0, 2),
